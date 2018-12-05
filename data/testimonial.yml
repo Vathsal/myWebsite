@@ -1,15 +1,15 @@
 enable: true
-title: Fun Facts About Us
+title: Fun Facts About Me
 paragraph: >
-  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+  Here are some quirky facts about me !
 
 numbers:
   - icon: ion-ios-chatboxes-outline
-    counter: 2000
-    text: Cups of Coffee
+    counter: 1320
+    text: Minutes medidates
   - icon: ion-ios-glasses-outline
-    counter: 2000
-    text: Cups of Coffee
+    counter: 198
+    text: Cups of Hot Chocolate
   - icon: ion-ios-compose-outline
     counter: 2000
     text: Cups of Coffee

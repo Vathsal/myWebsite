@@ -1,4 +1,4 @@
-title = "Airspace for Hugo"
+title = "Vathsal"
 baseURL = "https://vathsal.github.io/myWebsite/"
 languageCode = "en-us"
 theme = "airspace"
@@ -12,36 +12,24 @@ publishDir = "docs"
     url = "/work"
   [[menu.header]]
     weight = 3
-    name = "Blog"
+    name = "Resume"
     url = "/blog"
   [[menu.header]]
     weight = 4
-    name = "Service"
-    url = "/service"
-  [[menu.header]]
-    weight = 5
     name = "Contact"
     url = "/contact"
 
   [[menu.footer]]
     weight = 1
-    name = "About us"
+    name = "About me"
     url = "#"
   [[menu.footer]]
     weight = 2
-    name = "Contact us"
+    name = "Contact me"
     url = "#"
   [[menu.footer]]
     weight = 3
-    name = "How it works"
-    url = "#"
-  [[menu.footer]]
-    weight = 4
-    name = "Blog"
-    url = "#"
-  [[menu.footer]]
-    weight = 5
-    name = "Terms"
+    name = "Resume"
     url = "#"
 
 # The site's parameters
@@ -57,14 +45,14 @@ publishDir = "docs"
 
   [params.slider]
     enable = true
-    title = "A digital marketing &amp; design agency"
-    subtitle = "We love the Web and the work we do.<br/>We work closely with our clients to deliver the best possible solutions for their needs"
+    title = "Vathsal Veena Shashidhar"
+    subtitle = "Graphics/VR/AR Enthusiast &nbsp;&bull;&nbsp; Prototyper &nbsp;&bull;&nbsp; Design Thinker"
 
   [params.wrapper]
     enable = true
-    title = "About Us"
-    italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-    paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id"
+    title = "About Me"
+    italic = "Hi! Bringing together innovative technologies, open standards and creative processes, I am a developer who aspires to create interactive experiences which are engaging and intellectually stimulating. An individual driven by visual cues, whose thoughts gallop amidst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
+    paragraph = "An ardent admirer of minimalistic design and creative detailing, I also like to explore the myriad ways through which one can impact life with design. My varying interests and pursuits have helped me stay curious and open-minded and I strive to be a designer by passion, developer by profession, an esthete by vocation and a conversationalist by character. At the heart of all of these lies a young man who appreciates life and its simplicity. The iconic Julia Childs once said “People who love to eat are always the best people” and I absolutely swear by it. Good food and soulful music is all it takes to make me a happy man!"
 
   [params.blog]
     enable = true
@@ -73,16 +61,16 @@ publishDir = "docs"
 
   [params.feature]
     enable = true
-    title = "We believe in great ideas"
-    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+    title = "I believe ..."
+    content = "An ardent admirer of minimalistic design and creative detailing, I also like to explore the myriad ways through which one can impact life with design. My varying interests and pursuits have helped me stay curious and open-minded and I strive to be a designer by passion, developer by profession, an esthete by vocation and a conversationalist by character. At the heart of all of these lies a young man who appreciates life and its simplicity. The iconic Julia Childs once said “People who love to eat are always the best people” and I absolutely swear by it. Good food and soulful music is all it takes to make me a happy man!"
     [params.feature.button]
       caption = "View Works"
       url = "#"
 
   [params.call]
     enable = true
-    title = "We design delightful digital experiences."
-    paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+    title = "Technology Design Stratergy "
+    paragraph = "I am constantly striving to explore the nexus between art & technology"
 
   [params.contact]
     enable = true
@@ -95,9 +83,6 @@ publishDir = "docs"
       message = "Your message"
       button = "Send message"
     [params.contact.box]
-      title = "Stop by for a visit"
-      address = "North Main Street, Brooklyn Australia"
-      email = "Email: contact@mail.com"
-      phone = "Phone: +88 01672 506 744"
-    [params.contact.gmaps]
-      title = "We Also Count in Google Maps"
+      title = "Let's catch up "
+      address = "San Jose, California, USA"
+      email = "Email: picasiovs@gmail.com"

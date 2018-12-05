@@ -3,33 +3,15 @@ title: Just some of our latest projects.
 subtitle: Don’t just take our word for it. Check out some of our latest work.
 
 portfolio:
-  - category: Branding
-    url: "#"
-    image: "/img/portfolio/work1.jpg"
-    name: Tesla Motors
-    description: >
-      Labore et dolore magna aliqua. Ut enim ad
-  - category: Websites
-    url: "#"
-    image: "/img/portfolio/work1.jpg"
-    name: Tesla Motors
-    description: >
-      Labore et dolore magna aliqua. Ut enim ad
-  - category: Graphics
+  - category: Projects
     url: "#"
     image: "/img/portfolio/work2.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
-  - category: Design
+  - category: Work
     url: "#"
     image: "/img/portfolio/work3.jpg"
-    name: Tesla Motors
-    description: >
-      Labore et dolore magna aliqua. Ut enim ad
-  - category: Video
-    url: "#"
-    image: "/img/portfolio/work4.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
