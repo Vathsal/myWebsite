@@ -1,7 +1,8 @@
 title = "Airspace for Hugo"
-baseURL = "https://www.example.com"
+baseURL = "https://Vathsal.github.io/myWebsite/"
 languageCode = "en-us"
 theme = "airspace"
+publishDir = "docs"
 
 [menu]
 
