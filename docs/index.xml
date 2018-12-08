@@ -68,6 +68,15 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     
     <item>
       <title>Contact</title>
+      <link>https://vathsal.github.io/myWebsite/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
       <link>https://vathsal.github.io/myWebsite/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -11,13 +11,9 @@ publishDir = "docs"
     name = "Work"
     url = "/work"
   [[menu.header]]
-    weight = 3
-    name = "Resume"
-    url = "/blog"
-  [[menu.header]]
     weight = 4
     name = "Contact"
-    url = "/contact"
+    url = "/resume"
 
   [[menu.footer]]
     weight = 1
@@ -26,11 +22,7 @@ publishDir = "docs"
   [[menu.footer]]
     weight = 2
     name = "Contact me"
-    url = "#"
-  [[menu.footer]]
-    weight = 3
-    name = "Resume"
-    url = "#"
+    url = "/resume"
 
 # The site's parameters
 [params]
@@ -65,7 +57,7 @@ publishDir = "docs"
     content = "An ardent admirer of minimalistic design and creative detailing, I also like to explore the myriad ways through which one can impact life with design. My varying interests and pursuits have helped me stay curious and open-minded and I strive to be a designer by passion, developer by profession, an esthete by vocation and a conversationalist by character. At the heart of all of these lies a young man who appreciates life and its simplicity. The iconic Julia Childs once said “People who love to eat are always the best people” and I absolutely swear by it. Good food and soulful music is all it takes to make me a happy man!"
     [params.feature.button]
       caption = "View Works"
-      url = "#"
+      url = "/work"
 
   [params.call]
     enable = true
@@ -76,13 +68,15 @@ publishDir = "docs"
     enable = true
     title = "Drop us a note"
     subtitle = "Don’t just take our word for it. Check out some of our latest work."
-    [params.contact.form]
-      name = "Your name"
-      email = "Your email"
-      subject = "Your subject"
-      message = "Your message"
-      button = "Send message"
-    [params.contact.box]
-      title = "Let's catch up "
-      address = "San Jose, California, USA"
-      email = "Email: picasiovs@gmail.com"
+  [params.contact.form]
+    name = "Your name"
+    email = "Your email"
+    subject = "Your subject"
+    message = "Your message"
+    button = "Send message"
+  [params.contact.box]
+    title = "Let's connect"
+    address = "San Jose, California, USA"
+    email = "picasiovs@gmail.com"
+    linkedin = "www.linkedin.com/in/vathsalvs"
+    instagram = "picasiovs"
