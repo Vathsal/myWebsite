@@ -9,27 +9,64 @@
 
 	{{ partial "global-header.html" . }}
 
-	<section class="blog section">
-		<div class="container">
-			<div class="row">
-				{{ range (.Paginator 6).Pages }}
-				<div class="col-md-6">
-					<article class="blog-post">
-						{{ with .Params.image }}
-						<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
-						<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-						<p>
-							{{ .Summary }}
-						</p>
-						<a href="{{ .Permalink }}" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				{{ end }}
-			</div>
-			<div class="col-12 text-center">
-				{{ template "_internal/pagination.html" . }}
-			</div>
-		</div>
+	<!-- Portfolio Start -->
+	<section id="portfolio-work">
+	    <div class="container">
+	        <div class="row">
+	          <div class="col-md-12">
+	            <div class="block">
+	              <div class="portfolio-menu">
+	                <ul>
+	                  {{ $categories := slice }}
+	                  {{ range .Site.Data.work.portfolio }}
+	                    {{ $categories = $categories | append .category }}
+	                  {{ end }}
+	                    <li class="filter" data-filter="all">Everything</li>
+	                  {{ range ( $categories | uniq ) }}
+	                    <li class="filter" data-filter=".{{ . }}">{{ . }}</li>
+	                  {{ end }}
+	                </ul>
+	              </div>
+	              <div class="portfolio-contant">
+	                <ul id="portfolio-contant-active">
+	                  {{ range .Site.Data.work.portfolio }}
+	                    <li class="mix {{ .category }}">
+	                      <a href= "{{ .url }}">
+	                        <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="">
+	                        <div class="overly">
+	                          <div class="position-center">
+	                            <h2>{{ .name }}</h2>
+	                            <p>{{ .description }}</p>
+	                          </div>
+	                        </div>
+	                      </a>
+	                  </li>
+	                  {{ end }}
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!-- Clients Logo Section Start -->
+	<section id="clients-logo-section">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-12">
+	        <div class="block">
+	          <div id="clients-logo" class="owl-carousel">
+	            {{ range .Site.Data.work.clients }}
+	            <div class="clients-logo-img">
+	              <a href="{{ .url }}"><img src="{{ $.Site.BaseURL }}{{ .image }}" alt="Features"></a>
+	            </div>
+	            {{ end }}
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
 	</section>
 
 	{{ partial "footer.html" . }}

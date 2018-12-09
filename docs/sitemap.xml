@@ -18,6 +18,21 @@
   </url>
   
   <url>
+    <loc>https://vathsal.github.io/myWebsite/work/project-1/</loc>
+    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vathsal.github.io/myWebsite/work/project-2/</loc>
+    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vathsal.github.io/myWebsite/work/project-3/</loc>
+    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vathsal.github.io/myWebsite/blog/hugo-is-for-lovers/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
   </url>
@@ -124,6 +139,12 @@
   
   <url>
     <loc>https://vathsal.github.io/myWebsite/work/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vathsal.github.io/myWebsite/work/</loc>
+    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

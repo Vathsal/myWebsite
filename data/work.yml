@@ -4,17 +4,26 @@ subtitle: Don’t just take our word for it. Check out some of our latest work.
 
 portfolio:
   - category: Projects
-    url: "#"
-    image: "/img/portfolio/work2.jpg"
-    name: Tesla Motors
+    url: "project-1"
+    image: "/img/portfolio/work3.jpg"
+    name: Project01
     description: >
       Labore et dolore magna aliqua. Ut enim ad
   - category: Work
-    url: "#"
-    image: "/img/portfolio/work3.jpg"
-    name: Tesla Motors
+    url: "project-2"
+    image: "/img/portfolio/work2.jpg"
+    name: Project02
     description: >
       Labore et dolore magna aliqua. Ut enim ad
+  - category: Explorations
+    url: "project-3"
+    image: "/img/portfolio/work2.jpg"
+    name: Project03
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+
+
+
 clients:
   - image: "/img/clients/clients-logo1.png"
     url: "#"
