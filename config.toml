@@ -49,6 +49,16 @@ publishDir = "docs"
     paragraph4 = "An individual driven by visual cues, whose thoughts gallop amidst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
     paragraph5 = "Being a developer by education, a designer by passion, and an aesthete by heart, I am constantly striving to explore the nexus between art & technology. If you share the same interests, we should definetly chat. "
 
+  [params.section3]
+    enable = true
+    title = "How I do"
+    paragraph1 = "Hi,"
+    paragraph2 = "This is my process to approacing problems. "
+    paragraph3 = "I aspire to combine the two to create experiences that celebrate human expression."
+    paragraph4 = "An individual driven by visual cues, whose thoughts gallop amidst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
+    paragraph5 = "Being a developer by education, a designer by passion, and an aesthete by heart, I am constantly striving to explore the nexus between art & technology. If you share the same interests, we should definetly chat. "
+
+
   [params.blog]
     enable = true
     title = "Get The Latest On What We're doing"

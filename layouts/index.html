@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+
 	{{ partial "head.html" . }}
 
 </head>
@@ -21,6 +21,9 @@
 		{{ partial "feature.html" . }}
 	{{ end }}
 
+	{{ if and (isset .Site.Params "section3") (.Site.Params.section3.enable) }}
+		{{ partial "section3.html" . }}
+	{{ end }}
 
 	{{ if and .Site.Data.service .Site.Data.service.enable }}
 		{{ partial "service.html" . }}
