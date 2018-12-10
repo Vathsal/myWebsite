@@ -3,7 +3,7 @@
  * In airspace, it is called style.css
  * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
  * The original style.css is now called airspace.css
- * 
+ *
  */
 
 /*
@@ -71,8 +71,6 @@ a:active {
   font-weight: 600;
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
-  font-style: italic;
   color: #666;
 }
 
@@ -291,8 +289,9 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 30px;
 }
 #feature p {
-  color: #8d8f92;
-  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
 }
 #feature .btn-view-works {
   background: #655E7A;
@@ -530,7 +529,6 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 15px;
 }
 #portfolio-work .block .portfolio-contant ul li a span {
-  font-style: italic;
   font-size: 13px;
   color: #655E7A;
 }
