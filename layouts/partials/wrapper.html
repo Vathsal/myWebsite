@@ -6,9 +6,20 @@
         <div class="block">
           <div class="section-title">
             <h2>{{ .Site.Params.wrapper.title }}</h2>
-            <p>{{ .Site.Params.wrapper.italic }}</p>
+            <p style="text-align:justify">
+              {{ .Site.Params.wrapper.paragraph1 }}<br />
+              <br />
+              {{ .Site.Params.wrapper.paragraph2 }}<br />
+              {{ .Site.Params.wrapper.paragraph3 }}
+            </p>
           </div>
-          <p>{{ .Site.Params.wrapper.paragraph }}</p>
+          <p style="text-align:justify">
+            {{ .Site.Params.wrapper.paragraph4 }}<br />
+            <br />
+            {{ .Site.Params.wrapper.paragraph5 }}<br />
+            <br />
+            {{ .Site.Params.wrapper.paragraph6 }}
+          </p>
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">

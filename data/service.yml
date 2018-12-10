@@ -4,32 +4,31 @@ subtitle: >
    Build your skills, not your resume.
 content:
 
-  - icon: ion-coffee
-    name: Design Thinking
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-compass
-    name: Project Management
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-image
-    name: Rapid Prototyping
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-bug
-    name: Visual Thinker
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-headphone
-    name: Minimalist
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
   - icon: ion-leaf
     name: Developer
     text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      Developing that solves a real problem and has a casue makes it so much more worth it
+  - icon: ion-coffee
+    name: Design Thinker
+    text: >
+      Design is everywhere, you just need to observe it
+  - icon: ion-compass
+    name: Project Management
+    text: >
+      If you fail to plan, then you are essentially planning to fail
+  - icon: ion-image
+    name: Rapid Prototyping
+    text: >
+      Making quick working prototypes and testing it is better than theoretical hypothesis
+  - icon: ion-bug
+    name: Visual Thinker
+    text: >
+      The best way to learn is to imprint a visual impression of the concept on your mind
+  - icon: ion-headphone
+    name: Minimalist
+    text: >
+      Having less imples making room for things that matter
+  - icon: ion-headphone
+    name: Collaborator
+    text: >
+      Helping people do what they do best, is how we can collectively advance towards a goal

@@ -4,10 +4,22 @@
     <div class="col-md-6 col-md-offset-6">
       <h2 class="text-uppercase">{{ .Site.Params.feature.title }}</h2>
       <p>
-      	{{ .Site.Params.feature.content | markdownify }}
+          In my leisure, I have been particularly intrigued about 2 topics viz-a-viz :
+              <li> Design Thinking : an idea popularised by Tim Brown, CEO of IDEO and, </li>
+              <li> Minimalism : an idea about not focused on having less, rather, focused on making room for more </li>
+          <br />
+          My core focus includes :
+              <li> Computer Graphics </li>
+              <li> Virtual Reality /Augmented Reality /Mixed Reality </li>
+              <li> Physics-based simulation </li>
+              <li> Rapid Prototyping </li>
+              <li> Unity 3D </li>
+              <li> C++ </li>
+           <br />
+           Take a look at some of my works below.
       </p>
       {{ with .Site.Params.feature.button }}
-      	<a href="{{ .url }}" class="btn btn-main">{{ .caption }}</a>
+      	<a href="{{ $.Site.BaseURL }}{{ .url }}" class="btn btn-main">{{ .caption }}</a>
       {{ end }}
     </div>
   </div>

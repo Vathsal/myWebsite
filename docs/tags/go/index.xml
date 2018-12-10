@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>A look inside Facebook</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-22/</link>
+      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/work/project-22/</guid>
+      <description>Sorry ! Will be updated soon. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>Attention management system</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-31/</link>
+      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/work/project-31/</guid>
+      <description>Sorry ! Will be updated soon. Please come back later.</description>
+    </item>
+    
+    <item>
       <title>Go is for lovers</title>
       <link>https://vathsal.github.io/myWebsite/blog/go-is-for-lovers/</link>
       <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
@@ -22,33 +40,74 @@ This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
-      <title>This is Project-1</title>
-      <link>https://vathsal.github.io/myWebsite/work/project-1/</link>
+      <title>Motion Capture Interpolator</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-5/</link>
       <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/work/project-5/</guid>
+      <description>Aim: The aim of this project was to understand and evaluate the different interpolation schemes. For the purpose of this project, we implemented 4 interpolation schemes, namely:
+ • Linear interpolation using Euler angles • Bezier interpolation using Euler angles • Spherical Linear interpolation using quaternions • Spherical Bezier interpolation using quaternions  Procedure: Step 1 :
+To start with, we were given a bunch of (ASF + AMC) files corresponding to different motion capture sequences.</description>
+    </item>
+    
+    <item>
+      <title>Smoke Simulation</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-6/</link>
+      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/work/project-6/</guid>
+      <description>Sorry ! Will be updated soon. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>The YBVR journey</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-21/</link>
+      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/work/project-21/</guid>
+      <description>Sorry ! Will be updated soon. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>Pose transfer of an Armadillo using eigen functions</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vathsal.github.io/myWebsite/work/project-1/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
+      <description>Aim:  The aim of this project is to understand the role of eigenfunctions in pose estimation  Background: What are Eigenfunctions and why we are using them ?
+Now that we understand the value of eigenfunctions and their usage. Let’s see how these can be applied to mesh deformation.
+Procedure: Consider 2 poses that you would like to do the pose transfer between. Let us consider Pose-A as the source mesh and Pose-B as the destination mesh.</description>
     </item>
     
     <item>
-      <title>This is Project-2</title>
-      <link>https://vathsal.github.io/myWebsite/work/project-2/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      <title>Simulating a Constrained Particle System</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vathsal.github.io/myWebsite/work/project-2/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
+      <guid>https://vathsal.github.io/myWebsite/work/project-4/</guid>
+      <description>Aim: The aim of the project was to use a particle system to model a simple deformable chain that moves along a ring and obeys :
+ Newtons Laws Geometric Constraints  Background : For this system, we define three constraints, namely :
+ Rigid Edge Constraint : This helps to keep the objects fixed in position and rotation relative to each other. Pin Constraint : This helps to prevent the chain from falling away under gravity.</description>
     </item>
     
     <item>
-      <title>This is Project-3</title>
+      <title>Simulating a Jello cube</title>
       <link>https://vathsal.github.io/myWebsite/work/project-3/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vathsal.github.io/myWebsite/work/project-3/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
+      <description>Aim: The aim of this project was to understand the application of 3D mass-spring network in physically based modelling. To achieve this, we programmed a physically-based simulation of a jello cube which was modelled using a 3D mass spring network. The jello cube was modelled to be made of elastic material, i.e., when the jello cube is stretched, it will try to contract and when the jello cube is squeezed, it will try to inflate back to the original shape.</description>
+    </item>
+    
+    <item>
+      <title>Simulating a Roller Coaster using Splines</title>
+      <link>https://vathsal.github.io/myWebsite/work/project-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vathsal.github.io/myWebsite/work/project-2/</guid>
+      <description>Aim : Having been introduced to splines and OpenGL programming, the aim of this project was to understand the application of splines. For this, we modelled a roller coaster using Catmull-Rom splines and then simulated a first person view of a person riding the roller coaster in an immersive environment using OpenGL lighting and texture mapping.
+Background : Why choose catmul rom splines ?
+Catmull-Rom splines are a family of cubic interpolating splines such that the tangent at each point is calculated using the next and the previous position on the spline.</description>
     </item>
     
   </channel>

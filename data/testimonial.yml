@@ -1,7 +1,7 @@
 enable: true
 title: Fun Facts About Me
 paragraph: >
-  Here are some quirky facts about me !
+  Here are some lesser known facts about me !
 
 numbers:
   - icon: ion-ios-chatboxes-outline
@@ -9,13 +9,13 @@ numbers:
     text: Minutes medidates
   - icon: ion-ios-glasses-outline
     counter: 198
-    text: Cups of Hot Chocolate
+    text: Cups of Hot Chocolate consumed
   - icon: ion-ios-compose-outline
-    counter: 2000
-    text: Cups of Coffee
+    counter: 4980
+    text: Memories captured
   - icon: ion-ios-timer-outline
-    counter: 2000
-    text: Cups of Coffee
+    counter: 9999
+    text: Hugs given
 
 people:
   - text: >

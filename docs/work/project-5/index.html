@@ -14,7 +14,7 @@
 
 
 
-<title>Hugo is for lovers</title>
+<title>Motion Capture Interpolator</title>
 
 <meta name="generator" content="Hugo 0.52" />
 
@@ -95,89 +95,55 @@
 	        <div>
 	          <div class="block">
 							
-	            <h1>Hugo is for lovers</h1>
+	            <h1>Motion Capture Interpolator</h1>
 	            <div class="post-info-wrapper">
-	              <p class="italic">By <span class="bold"></span> on <span class="bold">6 August 2015</span></p>
+	              <p class="italic">By <span class="bold"></span> on <span class="bold">6 September 2015</span></p>
 	            </div>
 	            <hr />
 	            <p>
 
-<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<h2 id="aim">Aim:</h2>
 
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
+<p>The aim of this project was to understand and evaluate the different interpolation schemes.
+For the purpose of this project, we implemented <code>4 interpolation schemes</code>, namely:</p>
 
-<p>Save it somewhere specific as we will be using it in the next step.</p>
+<ul>
+<li>• Linear interpolation using Euler angles</li>
+<li>• Bezier interpolation using Euler angles</li>
+<li>• Spherical Linear interpolation using quaternions</li>
+<li>• Spherical Bezier interpolation using quaternions</li>
+</ul>
 
-<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
+<h2 id="procedure">Procedure:</h2>
 
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+<p><strong>Step 1 :</strong></p>
 
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
+<p>To start with, we were given a bunch of <code>(ASF + AMC)</code> files corresponding to different motion capture sequences. We parse these files and load the data into a suitable data structure.</p>
 
-<p>Follow the following steps:</p>
+<pre><code>ASF stands for `Acclaim Skeleton File`
+AMC stands for `Acclaim Motion Capture data`
 
-<ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
-</ol>
+ASF files encode the skeleton data. Typically in an ASF file, a base pose is defined for the skeleton that is the starting point for the motion data. It also contains information such as length of bones, degrees of freedom etc.
 
-<p>Corresponding pseudo commands:</p>
-
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
+AMC files contain the motion data for the skeleton defined in the ASF file. It contains information such as translation of root node, rotation of root node, join angles etc.
 </code></pre>
 
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<p><strong>Step 2 :</strong></p>
 
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+<p>We selected one ASF+AMC file pair, and formed a subsequence by randomly dropping some frames from the file.
+Step 3: We implemented the different interpolation schemes as mentioned above to compute the missing frames in the subsequence, so as to produce a sequence which is the same length as the original.</p>
 
-<p>Stop the Hugo process by hitting ctrl+c.</p>
+<p><strong>Step 4:</strong></p>
 
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<p>We then used an OpenGL based <code>Motion Capture Player</code> to render the skeleton data using the ASF file and played back the motion data using the AMC file.</p>
 
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
+<p><strong>Step 5:</strong></p>
 
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<p>To compare the accuracy of the interpolation schemes, we played back the original AMC file juxtaposed upon the new AMC files.</p>
 
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
+<h2 id="inferences">Inferences :</h2>
 
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
-
-<p>The best way to learn something is to play with it.</p>
+<p>We found that <code>Spherical Bezier Interpolations using quaternions</code> gave the best results.</p>
 </p>
 	          </div>
 	        </div>

@@ -5,23 +5,62 @@ subtitle: Don’t just take our word for it. Check out some of our latest work.
 portfolio:
   - category: Projects
     url: "project-1"
-    image: "/img/portfolio/work3.jpg"
-    name: Project01
+    image: "/img/portfolio/work1.jpg"
+    name: Pose Transfer
     description: >
-      Labore et dolore magna aliqua. Ut enim ad
-  - category: Work
+      Computer Graphics | MATLAB | 2017
+  - category: Projects
     url: "project-2"
-    image: "/img/portfolio/work2.jpg"
-    name: Project02
+    image: "/img/portfolio/work1.jpg"
+    name: Roller Coaster Simulation
     description: >
-      Labore et dolore magna aliqua. Ut enim ad
-  - category: Explorations
+      Computer Graphics | OpenGL/C++ | 2016
+  - category: Projects
     url: "project-3"
-    image: "/img/portfolio/work2.jpg"
-    name: Project03
+    image: "/img/portfolio/work1.jpg"
+    name: Jello Cube Simulation
     description: >
-      Labore et dolore magna aliqua. Ut enim ad
+      Computer Graphics | OpenGL/C++ | 2016
+  - category: Projects
+    url: "project-4"
+    image: "/img/portfolio/work1.jpg"
+    name: Partile System Simulation
+    description: >
+      Computer Graphics | OpenGL/C++ | 2016
+  - category: Projects
+    url: "project-5"
+    image: "/img/portfolio/work1.jpg"
+    name: Motion Capture Interpolator
+    description: >
+      Computer Graphics | OpenGL/C++ | 2017
+  - category: Projects
+    url: "project-6"
+    image: "/img/portfolio/work1.jpg"
+    name: Smoke Simulation
+    description: >
+      Computer Graphics | Unity| 2017
 
+
+  - category: Work
+    url: "project-21"
+    image: "/img/portfolio/work2.jpg"
+    name: YBVR
+    description: >
+      Virtual Reality | Unity | 2017
+  - category: Work
+    url: "project-22"
+    image: "/img/portfolio/work2.jpg"
+    name: Digital Fish
+    description: >
+      Augmented Reality | Unity | 2018
+
+
+  - category: Explorations
+    url: "project-31"
+    image: "/img/portfolio/work3.jpg"
+    name: Attention Management System
+    description: >
+      Poster Design | Illustrator | 2018
 
 
 clients:
