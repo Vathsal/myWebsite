@@ -9,39 +9,20 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="block">
+      <div class="col-md-12">
           <!-- Content -->
           <ul class="counter-box clearfix">
             {{ range .Site.Data.testimonial.numbers }}
             <li>
-              <div class="block">
                 <i class="{{ .icon }}"></i>
                 <h4 class="counter">{{ .counter }}</h4>
                 <span>{{ .text }}</span>
-              </div>
             </li>
             {{ end }}
           </ul>
-        </div>
       </div>
-      <div class="col-md-6">
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {{ range .Site.Data.testimonial.people }}
-            <div>
-                <img src="img/cotation.png" alt="IMG">
-                <p>"{{ .text }}"</p>
-                <div class="user">
-                  <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="Pepole">
-                  <p><span>{{ .name }}</span> {{ .role }}</p>
-                </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
   </div>
 </section>

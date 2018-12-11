@@ -16,25 +16,3 @@ numbers:
   - icon: ion-ios-timer-outline
     counter: 9999
     text: Hugs given
-
-people:
-  - text: >
-      This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
-    image: img/item-img1.jpg
-    name: Rose Ray
-    role: CEO-Themefisher
-  - text: >
-      This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
-    image: img/item-img1.jpg
-    name: Rose Ray
-    role: CEO-Themefisher
-  - text: >
-      This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
-    image: img/item-img1.jpg
-    name: Rose Ray
-    role: CEO-Themefisher
-  - text: >
-      This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
-    image: img/item-img1.jpg
-    name: Rose Ray
-    role: CEO-Themefisher
