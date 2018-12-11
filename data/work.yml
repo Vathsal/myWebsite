@@ -61,30 +61,3 @@ portfolio:
     name: Attention Management System
     description: >
       Poster Design | Illustrator | 2018
-
-
-clients:
-  - image: "/img/clients/clients-logo1.png"
-    url: "#"
-  - image: "/img/clients/clients-logo2.png"
-    url: "#"
-  - image: "/img/clients/clients-logo3.png"
-    url: "#"
-  - image: "/img/clients/clients-logo4.png"
-    url: "#"
-  - image: "/img/clients/clients-logo5.png"
-    url: "#"
-  - image: "/img/clients/clients-logo4.png"
-    url: "#"
-  - image: "/img/clients/clients-logo3.png"
-    url: "#"
-  - image: "/img/clients/clients-logo2.png"
-    url: "#"
-  - image: "/img/clients/clients-logo1.png"
-    url: "#"
-  - image: "/img/clients/clients-logo2.png"
-    url: "#"
-  - image: "/img/clients/clients-logo3.png"
-    url: "#"
-  - image: "/img/clients/clients-logo4.png"
-    url: "#"
