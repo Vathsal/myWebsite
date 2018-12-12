@@ -37,7 +37,7 @@ publishDir = "docs"
 
   [params.slider]
     enable = true
-    title = "Vathsal Veena Shashidhar"
+    title = "Hi, I am Vathsal"
     subtitle = "Immersive-Technology Enthusiast &nbsp;&bull;&nbsp; Conversationalist &nbsp;&bull;&nbsp; Design Thinker"
 
   [params.wrapper]
