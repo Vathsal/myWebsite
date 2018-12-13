@@ -42,11 +42,11 @@ publishDir = "docs"
 
   [params.wrapper]
     enable = true
-    title = "About Me"
-    paragraph1 = "Hi,"
-    paragraph2 = "I Code. I Sketch."
-    paragraph3 = "I aspire to combine the two to create experiences that celebrate human expression."
-    paragraph4 = "This is toatl crap !!!midst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
+    title = "Hey there,"
+    paragraph1 = "I am Vathsal Veena Shashidhar."
+    paragraph2 = "I am developer by vocation, a designer by passion, and an aesthete by choice."
+    paragraph3 = "I am currently consulting as a Unity Developer for an Augmented Reality Project at Building 8, Facebook. Prior to this I was working as a VR software developer at YBVR."
+    paragraph4 = "I recently graduated from USC with a masters in Computer Graphics. My coursework was primarily focused on applied signal processing, computer graphics, physics-based simulation and VR."
     paragraph5 = "Add view works button here ! "
     caption = "View Works"
 
