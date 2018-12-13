@@ -12,16 +12,16 @@ publishDir = "docs"
     url = "/work"
   [[menu.header]]
     weight = 3
-    name = "Contact"
+    name = "About Me"
     url = "/resume"
 
   [[menu.footer]]
     weight = 1
-    name = "About me"
+    name = "Home"
     url = "#"
   [[menu.footer]]
     weight = 2
-    name = "Contact me"
+    name = "About me"
     url = "/resume"
 
 # The site's parameters
@@ -46,8 +46,9 @@ publishDir = "docs"
     paragraph1 = "Hi,"
     paragraph2 = "I Code. I Sketch."
     paragraph3 = "I aspire to combine the two to create experiences that celebrate human expression."
-    paragraph4 = "An individual driven by visual cues, whose thoughts gallop amidst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
-    paragraph5 = "Being a developer by education, a designer by passion, and an aesthete by heart, I am constantly striving to explore the nexus between art & technology. If you share the same interests, we should definetly chat. "
+    paragraph4 = "This is toatl crap !!!midst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
+    paragraph5 = "Add view works button here ! "
+    caption = "View Works"
 
   [params.section3]
     enable = true

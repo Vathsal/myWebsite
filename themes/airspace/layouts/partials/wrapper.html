@@ -11,6 +11,9 @@
           </div>
           <p>{{ .Site.Params.wrapper.paragraph }}</p>
         </div>
+        {{ with .Site.Params.feature.button }}
+          <a href="{{ $.Site.BaseURL }}{{ .url }}" class="btn btn-view-works ">{{ .Site.Params.wrapper.caption }}</a>
+        {{ end }}
       </div><!-- .col-md-7 close -->
 
       <div class="col-md-5 col-sm-12">

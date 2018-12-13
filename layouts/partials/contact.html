@@ -7,7 +7,7 @@
 
     <div class="row">
 
-
+      <!--
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <form>
@@ -63,9 +63,22 @@
         </div>
       </div>
     </div>
+-->
 
+<!--
+{{ if and (isset .Site.Params "wrapper") (.Site.Params.wrapper.enable) }}
+  {{ partial "wrapper.html" . }}
+{{ end }}
 
+{{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
+  {{ partial "feature.html" . }}
+{{ end }}
 
-  </div>
+{{ if and (isset .Site.Params "section3") (.Site.Params.section3.enable) }}
+  {{ partial "section3.html" . }}
+{{ end }}
+-->
+
+  </div> <!-- end of class="container"-->
 </section>
 {{ end }}
