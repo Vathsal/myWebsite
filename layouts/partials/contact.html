@@ -1,13 +1,14 @@
 {{ partial "global-header.html" . }}
+{{ partial "section2.html" . }}
+{{ partial "section3.html" . }}
+{{ partial "section4.html" . }}
 
-<!-- contact form start -->
+<!--
 {{ with .Site.Params.contact }}
+
 <section id="contact-form">
   <div class="container">
 
-    <div class="row">
-
-      <!--
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <form>
@@ -36,10 +37,7 @@
           </form>
         </div>
       </div>
-
-
     </div>
-
 
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
@@ -63,22 +61,9 @@
         </div>
       </div>
     </div>
--->
 
-<!--
-{{ if and (isset .Site.Params "wrapper") (.Site.Params.wrapper.enable) }}
-  {{ partial "wrapper.html" . }}
-{{ end }}
-
-{{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
-  {{ partial "feature.html" . }}
-{{ end }}
-
-{{ if and (isset .Site.Params "section3") (.Site.Params.section3.enable) }}
-  {{ partial "section3.html" . }}
-{{ end }}
--->
-
-  </div> <!-- end of class="container"-->
+  </div>
 </section>
+
 {{ end }}
+-->

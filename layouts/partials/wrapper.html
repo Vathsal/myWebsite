@@ -10,19 +10,24 @@
               {{ .Site.Params.wrapper.paragraph1 }}<br />
               <br />
               {{ .Site.Params.wrapper.paragraph2 }}<br />
-              {{ .Site.Params.wrapper.paragraph3 }}
+              <br />
+              {{ .Site.Params.wrapper.paragraph3 }}<br />
+              <br />
+              {{ .Site.Params.wrapper.paragraph4 }}<br />
+              <br />
+              {{ .Site.Params.wrapper.paragraph5 }}
             </p>
+
+            {{ with .Site.Params.feature.button }}
+              <a href="{{ $.Site.BaseURL }}{{ .url }}" class="btn btn-view-works ">{{ .caption }}</a>
+            {{ end }}
+
           </div>
-          <p style="text-align:justify">
-            {{ .Site.Params.wrapper.paragraph4 }}<br />
-            <br />
-            {{ .Site.Params.wrapper.paragraph5 }}
-          </p>
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
         <div class="block">
-          <img src="img/wrapper-img.gif" alt="Img">
+          <img src="img/wrapper-img.jpeg" alt="Img">
         </div>
       </div><!-- .col-md-5 close -->
     </div>
