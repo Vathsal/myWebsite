@@ -19,7 +19,18 @@
 		{{ partial "wrapper.html" . }}
 	{{ end }}
 
-	<!-- Commented for the time being
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	{{ end }}
+
+	{{ if and .Site.Data.service .Site.Data.service.enable }}
+		{{ partial "service.html" . }}
+	{{ end }}
+
+
+	{{ partial "footer.html" . }}
+<!--
+	 Commented for the time being
 	{{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
 		{{ partial "feature.html" . }}
 	{{ end }}
@@ -27,23 +38,16 @@
 	{{ if and (isset .Site.Params "section3") (.Site.Params.section3.enable) }}
 		{{ partial "section3.html" . }}
 	{{ end }}
-  -->
-
-	{{ if and .Site.Data.service .Site.Data.service.enable }}
-		{{ partial "service.html" . }}
-	{{ end }}
 
 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
 		{{ partial "call-to-action.html" . }}
 	{{ end }}
 
-	<!-- Fun Facts section
+	Fun Facts section
 	{{ if .Site.Data.testimonial.enable }}
 		{{ partial "testimonial.html" . }}
 	{{ end }}
   -->
-
-	{{ partial "footer.html" . }}
 
 </body>
 </html>
