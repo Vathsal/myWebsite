@@ -12,17 +12,17 @@ publishDir = "docs"
     url = "/work"
   [[menu.header]]
     weight = 3
-    name = "About Me"
-    url = "/resume"
+    name = "About"
+    url = "/about"
 
-  [[menu.footer]]
-    weight = 1
-    name = "Home"
-    url = "#"
-  [[menu.footer]]
-    weight = 2
-    name = "About me"
-    url = "/resume"
+#  [[menu.footer]]
+#    weight = 1
+#    name = "Home"
+#    url = "#"
+#  [[menu.footer]]
+#    weight = 2
+#    name = "About me"
+#    url = "/resume"
 
 # The site's parameters
 [params]
@@ -33,7 +33,7 @@ publishDir = "docs"
 
   dateFormat = "6 January 2006"
 
-  home = "Home"
+  # home = "Home" (removes home button from header)
 
   [params.slider]
     enable = true
@@ -52,21 +52,11 @@ publishDir = "docs"
 
   [params.section2]
     enable = true
-    title = "Why I do what I do"
-    paragraph1 = "Hi,"
-    paragraph2 = "This is my process to approacing problems. "
-    paragraph3 = "I aspire to combine the two to create experiences that celebrate human expression."
-    paragraph4 = "An individual driven by visual cues, whose thoughts gallop amidst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
-    paragraph5 = "Being a developer by education, a designer by passion, and an aesthete by heart, I am constantly striving to explore the nexus between art & technology. If you share the same interests, we should definetly chat. "
+    title = "Here's what I've done so far"
 
  [params.section3]
     enable = true
-    title = "What I do"
-    paragraph1 = "Hi,"
-    paragraph2 = "This is my process to approacing problems. "
-    paragraph3 = "I aspire to combine the two to create experiences that celebrate human expression."
-    paragraph4 = "An individual driven by visual cues, whose thoughts gallop amidst a loud constant chatter, I imprint an image of the things I see, am enticed to write down everything I hear and obsess about what I need to do next and how I am going to get there."
-    paragraph5 = "Being a developer by education, a designer by passion, and an aesthete by heart, I am constantly striving to explore the nexus between art & technology. If you share the same interests, we should definetly chat. "
+    title = "Fun facts about me "
 
   [params.section4]
     enable = true
