@@ -43,11 +43,9 @@ publishDir = "docs"
   [params.wrapper]
     enable = true
     title = "Hey there,"
-    paragraph1 = "Hi, I am Vathsal."
-    paragraph2 = "I am developer by vocation, a designer by passion, and an aesthete by choice."
-    paragraph3 = "I am currently consulting as a Unity Developer for an Augmented Reality Project at Building 8, Facebook. Prior to this I was working as a VR software developer at Yerba Buena VR (A 360 video optimization VR Startup)."
-    paragraph4 = "I recently graduated from the University of Southern California with a masters in Computer Graphics. My coursework was primarily focused on applied signal processing, computer graphics, physics-based simulation and Virtual Reality."
-    paragraph5 = " "
+    paragraph1 = "I am developer by vocation, a designer by passion, and an aesthete by choice."
+    paragraph2 = "I am currently consulting as a Unity Developer for an Augmented Reality Project at Building 8, Facebook. Prior to this I was working as a VR software developer at Yerba Buena VR (A 360 video optimization VR Startup)."
+    paragraph3 = "I recently graduated from the University of Southern California with a masters in Computer Graphics. My coursework was primarily focused on applied signal processing, computer graphics, physics-based simulation and Virtual Reality."
     caption = "View Works"
 
   [params.section2]
