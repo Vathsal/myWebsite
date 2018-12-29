@@ -476,6 +476,7 @@ header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 #work-header .block h1 {
+  color: #FFC408;
   font-weight: 100;
   font-size: 45px;
   letter-spacing: 6px;
@@ -657,8 +658,8 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant .position-center {
   position: absolute;
-  top: 50%;
-  left: 10%;
+  /*top: 50%;*/
+  /*left: 20%;*/
   -webkit-transform: translate(0%, 50%);
   -moz-transform: translate(0%, 50%);
   -ms-transform: translate(0%, 50%);
@@ -666,6 +667,7 @@ header .navbar-default .navbar-nav li a:hover {
   -webkit-transition: .5s all;
   -o-transition: .5s all;
   transition: .5s all;
+  text-align: center;
 }
 #portfolio-work .block .mix {
   display: none;
