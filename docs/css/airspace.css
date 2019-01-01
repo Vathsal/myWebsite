@@ -63,19 +63,20 @@ a:active {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .section-title h2 {
   /*text-transform: uppercase;*/
+  color: #FFFFFF;
   font-size: 28px;
   font-weight: 600;
 }
 .section-title p {
-  color: #666;
+  color: #C7C5C5;
 }
 
 .btn-main, .btn-transparent, .btn-small {
-    background: #655E7A;
+    background: #000000;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -155,39 +156,45 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
+  margin-top: 85px;
   font-weight: 100;
-  font-size: 45px;
+  font-size: 34px;
   line-height: 60px;
   letter-spacing: 10px;
   padding-bottom: 45px;
 }
 #slider .block p {
   color: #FFC408;
-  font-size: 23px;
+  font-size: 19px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  margin-top: -53px;
   letter-spacing: 3px;
 }
+
 /*--
 	wrapper Start
 --*/
 #intro {
+  background-color: #191919;
   padding: 100px 0;
 }
 #intro .block h2 {
+  color: #ffffff;
   padding-top: 35px;
   line-height: 27px;
   margin: 0;
 }
 #intro .block p {
-  color: #7B7B7B;
+  color: #C7C5C5;
   padding-top: 20px;
 }
 #intro .block img {
   padding-top: 75px;
   padding-left: 40px;
   width: 100%;
+  margin-top: -9px;
 }
 #intro .section-title {
   margin-bottom: 0px;
@@ -208,7 +215,7 @@ header .navbar-default .navbar-nav li a:hover {
 	service Start
 --*/
 #service {
-  /*background-color: #FFC408;*/
+  background-color: #191919;
   text-align: center;
   padding: 90px 0;
 }
@@ -222,10 +229,10 @@ header .navbar-default .navbar-nav li a:hover {
 #service .service-item h4 {
   padding-top: 20px;
   margin: 0;
-  color: #666;
+  color: #FFC408;
 }
 #service .service-item p {
-  color: #888;
+  color: #C7C5C5;
   padding-top: 10px;
   margin: 0;
   font-size: 14px;
@@ -311,7 +318,7 @@ header .navbar-default .navbar-nav li a:hover {
   color: #333;
 }
 #feature .btn-view-works {
-  background: #655E7A;
+  background: #000000;
   color: #fff;
   padding: 10px 20px;
   border-radius: 28px;
@@ -543,6 +550,7 @@ header .navbar-default .navbar-nav li a:hover {
 	portfolio-work Start
 --*/
 #portfolio-work {
+  background-color : #191919;
   overflow: hidden;
   padding: 80px 0;
 }
@@ -567,7 +575,7 @@ header .navbar-default .navbar-nav li a:hover {
   position: relative;
 }
 #portfolio-work .block .portfolio-menu ul .active {
-  color: #655E7A;
+  color: #000000;
   position: relative;
 }
 #portfolio-work .block .portfolio-menu ul .active:before {
@@ -640,7 +648,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul li a span {
   font-size: 13px;
-  color: #655E7A;
+  color: #000000;
 }
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;
@@ -727,14 +735,52 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 
+
+#section-2 {
+    background: #191919;
+}
+#section-2 .block h1{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 22px;
+    color: #C7C5C5;
+}
+#section-2 .block h2{
+    margin-bottom: -10px;
+    font-size: 14px;
+    color: #FFC408;
+}
+#section-2 .block h3{
+    font-size: 14px;
+    color: #C7C5C5;
+}
+#section-2 .block p{
+    font-size: 15px;
+    color: #C7C5C5;
+}
+#section-2 .section-title h5{
+    margin-top: 30px;
+    margin-bottom: -20px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
 #section-3 {
-  background: #000000;
+  background: #FFC408;
+}
+#section-3 .section-title p {
+  color: #000000;
 }
 #section-3 .section-title a {
-  color: #FFC408;
+  color: #656465;
 }
 #section-3 .section-title a:hover {
   color: #FFECB6;
+}
+
+
+#section-4 {
+    background: #191919;
 }
 
 #section-4 .block .section-title .col-md-3 {
@@ -924,7 +970,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .post-title{
-  color: #655E7A;
+  color: #000000;
   font-size: 25px;
   font-weight: 600;
   display: block;
