@@ -201,6 +201,9 @@ header .navbar-default .navbar-nav li a:hover {
   padding: 10px 20px;
   border-radius: 28px;
 }
+#intro .section-title a:hover {
+  color: #FFC408;
+}
 /*--
 	service Start
 --*/
@@ -722,6 +725,26 @@ header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   padding-right: 80px;
 }
+
+
+#section-3 {
+  background: #000000;
+}
+#section-3 .section-title a {
+  color: #FFC408;
+}
+#section-3 .section-title a:hover {
+  color: #FFECB6;
+}
+
+#section-4 .block .section-title .col-md-3 {
+ padding-top: 70px;
+}
+
+
+
+
+
 /*--
 	features-work Start
 --*/
@@ -932,21 +955,21 @@ header .navbar-default .navbar-nav li a:hover {
 	footer Start
 --*/
 footer {
-  background: #F5F5F5;
+  background: #000000;
   text-align: center;
-  padding-top: 48px;
-  padding-bottom: 55px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 footer p {
   font-size: 13px;
   line-height: 25px;
-  color: #919191;
+  color: #FFC408;
 }
 footer a {
   color: #595959;
 }
 footer .footer-manu {
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 footer .footer-manu ul {
   margin: 0px;
@@ -958,8 +981,8 @@ footer .footer-manu ul li {
 }
 footer .footer-manu ul li a {
   display: inline-block;
-  color: #494949;
+  color: #ffffff;
 }
 footer .footer-manu ul li a:hover {
-  color: #000;
+  color: #FFC408;
 }

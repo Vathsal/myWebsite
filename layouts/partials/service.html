@@ -18,7 +18,8 @@
       {{ range .Site.Data.service.content }}
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="{{ .icon }}"></i>
+          <img src="{{ $.Site.BaseURL }}{{ .img }}" alt="">
+          <!--<i class="{{ .icon }}"></i>-->
           <h4>{{ .name }}</h4>
           <p>{{ .text }}</p>
         </div>

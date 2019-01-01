@@ -1,38 +1,46 @@
 enable: true
 title: My Superpowers
 subtitle: >
-   Build your skills, not your resume.
+   These are my superpowers, which have proven to be an asset for me
 content:
 
   - icon: ion-leaf
+    img : "/img/superpowers/proactive.svg"
     name: Proactive
     text: >
        A key skill I acquired is to be able to forsee the shortcomings and act before its too late
   - icon: ion-headphone
+    img : "/img/superpowers/leadership.svg"
     name: Leadership
     text: >
-      Lead from the back and let others believe that they are in front
+      Lead from the back and let others believe that they are in front, is what I believe
   - icon: ion-compass
+    img : "/img/superpowers/problem-solving.svg"
     name: Problem Solving
     text: >
       The excitement of having a new problem to solve everyday is what drives me to work everyday
   - icon: ion-image
+    img : "/img/superpowers/meticulous.svg"
     name: Meticulous
     text: >
-      Making quick working prototypes and testing it is better than theoretical hypothesis
+      In my experience making quick working prototypes and testing has been better than theoretical hypothesis
   - icon: ion-bug
+    img : "/img/superpowers/collaboration.svg"
     name: Collaborator
     text: >
       I believe, helping people do what they do best, is how we can collectively advance towards a goal
   - icon: ion-headphone
+    img : "/img/superpowers/minimalist.svg"
     name: Minimalist
     text: >
-      Having less implies making more room for things that matter
+      I have made room for more by having and owing less things
   - icon: ion-coffee
+    img : "/img/superpowers/design-thinking.svg"
     name: Design Thinker
     text: >
-      Design is everywhere, you just need to observe it
+      I see design is everywhere, one needs to just observe it
   - icon: ion-coffee
+    img : "/img/superpowers/multipotentialite.svg"
     name: Multipotentialite
     text: >
-      Someone with many interests and creative pursuits
+      I constantly strive to balance my multiple interests and creative pursuits
