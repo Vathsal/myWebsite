@@ -5,42 +5,42 @@ subtitle: >
 content:
 
   - icon: ion-leaf
-    img : "/img/superpowers/proactive.svg"
+    img : "/img/superpowers/sp01.svg"
     name: Proactive
     text: >
        A key skill I acquired is to be able to forsee the shortcomings and act before its too late
   - icon: ion-headphone
-    img : "/img/superpowers/leadership.svg"
+    img : "/img/superpowers/sp02.svg"
     name: Leadership
     text: >
       Lead from the back and let others believe that they are in front, is what I believe
   - icon: ion-compass
-    img : "/img/superpowers/problem-solving.svg"
+    img : "/img/superpowers/sp03.svg"
     name: Problem Solving
     text: >
       The excitement of having a new problem to solve everyday is what drives me to work everyday
   - icon: ion-image
-    img : "/img/superpowers/meticulous.svg"
+    img : "/img/superpowers/sp04.svg"
     name: Meticulous
     text: >
       In my experience making quick working prototypes and testing has been better than theoretical hypothesis
   - icon: ion-bug
-    img : "/img/superpowers/collaboration.svg"
+    img : "/img/superpowers/sp05.svg"
     name: Collaborator
     text: >
       I believe, helping people do what they do best, is how we can collectively advance towards a goal
   - icon: ion-headphone
-    img : "/img/superpowers/minimalist.svg"
+    img : "/img/superpowers/sp06.svg"
     name: Minimalist
     text: >
       I have made room for more by having and owing less things
   - icon: ion-coffee
-    img : "/img/superpowers/design-thinking.svg"
+    img : "/img/superpowers/sp07.svg"
     name: Design Thinker
     text: >
       I see design is everywhere, one needs to just observe it
   - icon: ion-coffee
-    img : "/img/superpowers/multipotentialite.svg"
+    img : "/img/superpowers/sp08.svg"
     name: Multipotentialite
     text: >
       I constantly strive to balance my multiple interests and creative pursuits
