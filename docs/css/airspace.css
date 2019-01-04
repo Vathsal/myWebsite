@@ -122,6 +122,7 @@ header .navbar-default .navbar-nav li a {
 header .navbar-default .navbar-nav li a:hover {
   color: #FFC408;
 }
+
 /*font header .navbar-default .navbar-nav li a:hover {
   color: #FFC408;
 }*/
@@ -204,12 +205,14 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #intro .btn-view-works {
   background: #000000;
-  color: #fff;
   padding: 10px 20px;
   border-radius: 28px;
 }
-#intro .section-title a:hover {
+#intro .section-title a {
   color: #FFC408;
+}
+#intro .section-title a:hover {
+  color: #ffffff;
 }
 /*--
 	service Start
@@ -505,8 +508,9 @@ header .navbar-default .navbar-nav li a:hover {
 #about-header {
   background: url("../img/profile.jpg") no-repeat;
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 300px;
+  border-top:200px;
   position: relative;
   background-attachment: fixed;
 }
@@ -529,19 +533,15 @@ header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 #about-header .block h1 {
-  color: #FFC408;
-  font-weight: 100;
+  color: #ffffff;
+  font-weight: 200;
   font-size: 65px;
   letter-spacing: 6px;
   padding-bottom: 15px;
   margin-top: 0;
+  margin-top: 10%;
+  margin-right: 45%;
   text-transform: capitalize;
-}
-#about-header .block p {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  word-spacing: 3px;
 }
 
 
@@ -569,7 +569,7 @@ header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .portfolio-menu ul {
   background-color : #000000;
   /*--border: 1px solid #999999;--*/
-  border-radius: 25px;
+  border-radius: 20px;
   display: inline-block;
   margin-bottom: 40px;
 }
@@ -785,6 +785,16 @@ header .navbar-default .navbar-nav li a:hover {
     margin-bottom: -20px;
     font-size: 32px;
     color: #ffffff;
+}
+#section-2 .section-title .col-md-5{
+  width: 40%;
+}
+#section-2 .section-title .col-md-7{
+  width: 60%;
+}
+#section-2 .section-title img{
+  display:block;
+  width: 80%;
 }
 
 #section-3 {
