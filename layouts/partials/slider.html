@@ -4,7 +4,10 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="block text-center">
-                    <h1 class="animated fadeInUp text-uppercase">{{ .Site.Params.slider.title | safeHTML }}</h1>
+                    <h1 class="animated fadeInUp">{{ .Site.Params.slider.title1 | safeHTML }}</h1>
+                    <!-- <hr class="border_style1" width="10%"> -->
+                    <h2  class="animated fadeInUp">{{ .Site.Params.slider.title2 | safeHTML }}</h2>
+                    <!-- <hr::after class="border_style2" width="10%"> -->
                     <p class="animated fadeInUp">{{ .Site.Params.slider.subtitle | safeHTML }}</p>
                 </div>
             </div>
