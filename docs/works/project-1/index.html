@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<title>Pose transfer of an Armadillo using eigen functions</title>
+
+<meta name="generator" content="Hugo 0.52" />
+
+
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/style.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/animate.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/responsive.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/syntax.css" />
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://vathsal.github.io/myWebsite/js/bootstrap.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/owl.carousel.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/plugins.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/min/waypoints.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/jquery.counterup.js"></script>
+
+
+<script src="https://vathsal.github.io/myWebsite/js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://vathsal.github.io/myWebsite/">
+              <img src="https://vathsal.github.io/myWebsite/img/misc/logo.png" alt="Vathsal Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://vathsal.github.io/myWebsite/"></a></li>
+              
+                <li><a href="/myWebsite/works/">Works</a></li>
+              
+                <li><a href="/myWebsite/about/">About</a></li>
+              
+              <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							
+	            <h1>Pose transfer of an Armadillo using eigen functions</h1>
+	            
+	            <hr />
+	            <p>
+
+<h2 id="aim">Aim:</h2>
+
+<ul>
+<li>The aim of this project is to understand the role of eigenfunctions in pose estimation</li>
+</ul>
+
+<h2 id="background">Background:</h2>
+
+<p><strong>What are Eigenfunctions and why we are using them ?</strong></p>
+
+<p>Now that we understand the value of eigenfunctions and their usage. Let’s see how these can be applied to mesh deformation.</p>
+
+<h2 id="procedure">Procedure:</h2>
+
+<p>Consider 2 poses that you would like to do the pose transfer between. Let us consider <code>Pose-A</code> as the source mesh and <code>Pose-B</code> as the destination mesh.</p>
+
+<p><strong>Step 1:</strong></p>
+
+<p>First, we compute the surface-laplacian and basis functions of the source mesh (Pose-A).</p>
+
+<p>You may ask why are we computing the surface laplacian and basis functions?</p>
+
+<p>Laplace transform is a convenient way of turning a calculus into algebra. I.e it transforms sin/cos/exp functions into rational polynomials, differentiation into multiplication and integration into subtraction, thus making them faster to solve as a whole.</p>
+
+<pre><code>Calculus ------&gt; Algebra
+</code></pre>
+
+<p>In layman terms it can be explained as below:</p>
+
+<pre><code>Assume that you have a problem and it is hard to solve it in your world. So, you travel to another world (Laplace Transform) where you could do the calculations on much simpler things and then come back to your world (Inverse Laplace Transform) with the solution.
+</code></pre>
+
+<p><strong>Insert the analogy here :</strong></p>
+
+<p><strong>Step 2 :</strong></p>
+
+<p>We then compute the weights for each eigenfunction by projecting the source mesh onto its own basis functions. Let’s call these weights as <code>WA</code>.</p>
+
+<p><strong>Step 3 :</strong></p>
+
+<p>We then repeat steps 1 &amp; 2 for the destination mesh (Pose-B). This yield s a set of weights for each eigen function. Let’s call these weights as <code>WB</code>.</p>
+
+<pre><code>      WA = {a1, a2… an-1, an}
+      WB = {b1, b2… bn-1, bn}
+</code></pre>
+
+<p><strong>Step 4:</strong></p>
+
+<p>We now interpolate between these weight values to infer the intermediate poses of the armadillo. As we know, the lowest eigen functions defines the pose of the subject and the highest eigen functions defines the details. Here, since we want the final form from the destination pose and the details from the source pose, we use the weights WB (from the destination pose) for the lowest eigenfunctions and the weights WA (from the source pose) for the highest eigenfunctions to obtain a successful pose transfer.</p>
+
+<p><strong>Step 5:</strong></p>
+
+<p>Finally we performed this for multiple source-destination pose pairs and compiled the results resulting a little armadillo dance.</p>
+
+<pre><code>Note: For the purposes of this project, we have used an ‘armadillo’ as our subject. But, this algorithm would work just as fine with any other mesh as well.
+</code></pre>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+
+	<div class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://vathsal.github.io/myWebsite//works">Back to Works</a>
+	</div>
+
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="https://www.instagram.com/picasiovs/?hl=en"> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/vathsalvs/">LinkedIn</a></li>
+            <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+        <p>Copyright &copy Vathsal Veena Shashidhar. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

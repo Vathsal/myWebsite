@@ -29,16 +29,12 @@
 	</div>
 
 	<div class="center-text" style="padding: 30px;">
-	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/work">Back to Works</a>
+	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/works">Back to Works</a>
 	</div>
 
-<!-- 	<p class="center-text" style="padding: 30px;">
-	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/work">Back to Works</a>
-	</p>
-
-	 {{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
-		{{ partial "call-to-action.html" . }}
-	{{ end }}-->
+<!-- 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		  {{ partial "call-to-action.html" . }}
+	    {{ end }}-->
 
 	{{ partial "footer.html" . }}
 </body>

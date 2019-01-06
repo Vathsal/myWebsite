@@ -9,9 +9,9 @@
   <!-- header section -->
 	{{ partial "header.html" . }}
 
-  <!-- slider section -->
-	{{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
-		{{ partial "slider.html" . }}
+  <!-- landing section -->
+	{{ if and (isset .Site.Params "landing") (.Site.Params.landing.enable) }}
+		{{ partial "landing.html" . }}
 	{{ end }}
 
   <!-- about me section -->
@@ -23,8 +23,8 @@
 		{{ partial "call-to-action.html" . }}
 	{{ end }}
 
-	{{ if and .Site.Data.service .Site.Data.service.enable }}
-		{{ partial "service.html" . }}
+	{{ if and .Site.Data.skills .Site.Data.skills.enable }}
+		{{ partial "skills.html" . }}
 	{{ end }}
 
 

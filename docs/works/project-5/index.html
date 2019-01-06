@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<title>Motion Capture Interpolator</title>
+
+<meta name="generator" content="Hugo 0.52" />
+
+
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/style.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/animate.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/responsive.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/syntax.css" />
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://vathsal.github.io/myWebsite/js/bootstrap.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/owl.carousel.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/plugins.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/min/waypoints.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/jquery.counterup.js"></script>
+
+
+<script src="https://vathsal.github.io/myWebsite/js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://vathsal.github.io/myWebsite/">
+              <img src="https://vathsal.github.io/myWebsite/img/misc/logo.png" alt="Vathsal Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://vathsal.github.io/myWebsite/"></a></li>
+              
+                <li><a href="/myWebsite/works/">Works</a></li>
+              
+                <li><a href="/myWebsite/about/">About</a></li>
+              
+              <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							
+	            <h1>Motion Capture Interpolator</h1>
+	            
+	            <hr />
+	            <p>
+
+<h2 id="aim">Aim:</h2>
+
+<p>The aim of this project was to understand and evaluate the different interpolation schemes.
+For the purpose of this project, we implemented <code>4 interpolation schemes</code>, namely:</p>
+
+<ul>
+<li>• Linear interpolation using Euler angles</li>
+<li>• Bezier interpolation using Euler angles</li>
+<li>• Spherical Linear interpolation using quaternions</li>
+<li>• Spherical Bezier interpolation using quaternions</li>
+</ul>
+
+<h2 id="procedure">Procedure:</h2>
+
+<p><strong>Step 1 :</strong></p>
+
+<p>To start with, we were given a bunch of <code>(ASF + AMC)</code> files corresponding to different motion capture sequences. We parse these files and load the data into a suitable data structure.</p>
+
+<pre><code>ASF stands for `Acclaim Skeleton File`
+AMC stands for `Acclaim Motion Capture data`
+
+ASF files encode the skeleton data. Typically in an ASF file, a base pose is defined for the skeleton that is the starting point for the motion data. It also contains information such as length of bones, degrees of freedom etc.
+
+AMC files contain the motion data for the skeleton defined in the ASF file. It contains information such as translation of root node, rotation of root node, join angles etc.
+</code></pre>
+
+<p><strong>Step 2 :</strong></p>
+
+<p>We selected one ASF+AMC file pair, and formed a subsequence by randomly dropping some frames from the file.
+Step 3: We implemented the different interpolation schemes as mentioned above to compute the missing frames in the subsequence, so as to produce a sequence which is the same length as the original.</p>
+
+<p><strong>Step 4:</strong></p>
+
+<p>We then used an OpenGL based <code>Motion Capture Player</code> to render the skeleton data using the ASF file and played back the motion data using the AMC file.</p>
+
+<p><strong>Step 5:</strong></p>
+
+<p>To compare the accuracy of the interpolation schemes, we played back the original AMC file juxtaposed upon the new AMC files.</p>
+
+<h2 id="inferences">Inferences :</h2>
+
+<p>We found that <code>Spherical Bezier Interpolations using quaternions</code> gave the best results.</p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+
+	<div class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://vathsal.github.io/myWebsite//works">Back to Works</a>
+	</div>
+
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="https://www.instagram.com/picasiovs/?hl=en"> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/vathsalvs/">LinkedIn</a></li>
+            <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+        <p>Copyright &copy Vathsal Veena Shashidhar. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

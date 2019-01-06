@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<title>Simulating a Roller Coaster using Splines</title>
+
+<meta name="generator" content="Hugo 0.52" />
+
+
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/style.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/animate.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/responsive.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/syntax.css" />
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://vathsal.github.io/myWebsite/js/bootstrap.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/owl.carousel.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/plugins.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/min/waypoints.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/jquery.counterup.js"></script>
+
+
+<script src="https://vathsal.github.io/myWebsite/js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://vathsal.github.io/myWebsite/">
+              <img src="https://vathsal.github.io/myWebsite/img/misc/logo.png" alt="Vathsal Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://vathsal.github.io/myWebsite/"></a></li>
+              
+                <li><a href="/myWebsite/works/">Works</a></li>
+              
+                <li><a href="/myWebsite/about/">About</a></li>
+              
+              <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							
+	            <h1>Simulating a Roller Coaster using Splines</h1>
+	            
+	            <hr />
+	            <p>
+
+<h2 id="aim">Aim :</h2>
+
+<p>Having been introduced to splines and OpenGL programming, the aim of this project was to understand the <code>application of splines</code>. For this, we modelled a roller coaster using <code>Catmull-Rom splines</code> and then simulated a first person view of a person riding the roller coaster in an immersive environment using OpenGL lighting and texture mapping.</p>
+
+<h2 id="background">Background :</h2>
+
+<p><img src="img1.png" alt="Kiku" /></p>
+
+<p><strong>Why choose catmul rom splines ?</strong></p>
+
+<p>Catmull-Rom splines are a family of cubic interpolating splines such that the tangent at each point is calculated using the next and the previous position on the spline. They have C0 continuity, C1 continuity, local control and interpolation.</p>
+
+<h2 id="procedure">Procedure:</h2>
+
+<p>Firstly, we were provided with various <code>track file</code>, which are nothing but text files with a list of control points defining various track shapes.</p>
+
+<p>An example of this can be found below :</p>
+
+<p>This track file represents the shape as shown below:</p>
+
+<p><strong>Step 1:</strong></p>
+
+<p>We rendered a spline sequence which represents the entire length of the track as described in the track files above. In order to do so, we implemented a spline function which takes in four control points (p0 through p3) and a floating point value (u) from 0 to 1 , and computes the corresponding position on the spline segment defined by these four control points. We repeated this for all the controls points specified in the corresponding “track file”. Joining them all gives an elaborate curve of the coaster.</p>
+
+<p><strong>Step 2:</strong></p>
+
+<p>Once the roller coasters were modelled, we added a ground plane and textured it to simulate the effect of a terrain of our choice.</p>
+
+<p><strong>Step 3:</strong></p>
+
+<p>We then added a skybox to simulate the virtual environment that the roller coaster was in.</p>
+
+<p><strong>Step 4:</strong></p>
+
+<p>We then wrote logic to implement the ability to ride the coaster. We achieved this by moving the camera at a constant speed (in u) along the spline.</p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+
+	<div class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://vathsal.github.io/myWebsite//works">Back to Works</a>
+	</div>
+
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="https://www.instagram.com/picasiovs/?hl=en"> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/vathsalvs/">LinkedIn</a></li>
+            <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+        <p>Copyright &copy Vathsal Veena Shashidhar. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

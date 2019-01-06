@@ -7,7 +7,7 @@
 
 	{{ partial "header.html" . }}
 
-	<!-- {{ partial "global-header.html" . }}-->
+	{{ partial "work-header.html" . }}
 
 	<!-- Portfolio Start -->
 	<section id="portfolio-work">
@@ -18,7 +18,7 @@
 	              <div class="portfolio-menu">
 	                <ul>
 	                  {{ $categories := slice }}
-	                  {{ range .Site.Data.work.portfolio }}
+	                  {{ range .Site.Data.works.portfolio }}
 	                    {{ $categories = $categories | append .category }}
 	                  {{ end }}
 	                    <li class="filter" data-filter="all">Everything</li>
@@ -29,7 +29,7 @@
 	              </div>
 	              <div class="portfolio-contant">
 	                <ul id="portfolio-contant-active">
-	                  {{ range .Site.Data.work.portfolio }}
+	                  {{ range .Site.Data.works.portfolio }}
 	                    <li class="mix {{ .category }}">
 	                      <a href= "{{ .url }}">
 	                        <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="">

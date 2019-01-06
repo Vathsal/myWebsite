@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<title>Simulating a Jello cube</title>
+
+<meta name="generator" content="Hugo 0.52" />
+
+
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/airspace.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/style.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/animate.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/responsive.css" />
+<link rel="stylesheet" href="https://vathsal.github.io/myWebsite/css/syntax.css" />
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://vathsal.github.io/myWebsite/js/bootstrap.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/owl.carousel.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/plugins.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/min/waypoints.min.js"></script>
+<script src="https://vathsal.github.io/myWebsite/js/jquery.counterup.js"></script>
+
+
+<script src="https://vathsal.github.io/myWebsite/js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://vathsal.github.io/myWebsite/">
+              <img src="https://vathsal.github.io/myWebsite/img/misc/logo.png" alt="Vathsal Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://vathsal.github.io/myWebsite/"></a></li>
+              
+                <li><a href="/myWebsite/works/">Works</a></li>
+              
+                <li><a href="/myWebsite/about/">About</a></li>
+              
+              <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							
+	            <h1>Simulating a Jello cube</h1>
+	            
+	            <hr />
+	            <p>
+
+<h2 id="aim">Aim:</h2>
+
+<p>The aim of this project was to understand the application of <code>3D mass-spring network</code> in physically based modelling.
+To achieve this, we programmed a physically-based simulation of a jello cube which was modelled using a 3D mass spring network. The jello cube was modelled to be made of elastic material, i.e., when the jello cube is stretched, it will try to contract and when the jello cube is squeezed, it will try to inflate back to the original shape. We also implemented collision detection and response for the jello cube hitting any of the six walls of the bounding box.</p>
+
+<p><strong>Have a picture of a jello cube inside a bounding box showing the structural shear and spring forces.</strong></p>
+
+<h2 id="background">Background:</h2>
+
+<h2 id="procedure">Procedure:</h2>
+
+<p><strong>Step 1:</strong></p>
+
+<p>We modelled the cube to be of dimensions (1m x 1m x 1m) using (8*8*8 = 512) discrete mass points(surface points), all of equal mass, held together by springs. In the undeformed position, the mass points were positioned to form a uniform grid covering the volume of the cube. The rest length of the springs holding these masses were also uniform giving us the shape of the cube at start.</p>
+
+<p><strong>Step 2:</strong></p>
+
+<p>The cube was initially enclosed inside a bounding box of size (4m x 4m x 4m).</p>
+
+<p><strong>Step 3:</strong></p>
+
+<p>The movement of the cube was simulated. At the start of the simulation, the cube was in some prescribed ‘deformed’ position with some initial velocities which was read from the <code>world file</code> (called so because they describe the initial world (state) of the jello cube ). Over time, the initial velocities would propel the cube to move and deform. Some world files also had an external force field specified, which would further propel the movement of the cube.</p>
+
+<p>The movement of the cube was modelled by numerically solving a system of ODE which accounts for</p>
+
+<ul>
+<li>Newton’s 2nd law <code>F = ma</code></li>
+<li>Hook’s linear model of elasticity <code>F = Kx</code></li>
+<li>Linear damping <code>F = -KV</code></li>
+</ul>
+
+<p>Later, <code>Euler</code> and <code>RK4</code> methods were used to solve this system of ODE’s and the solution to these ODE’s was an array of acceleration values that were applied to the 512 mass points, thus simulating the movement of the cube.</p>
+
+<p>Also, the mass points were held together by springs composed of <code>structural springs</code>, <code>shear springs</code> and <code>bend springs</code>. Hence, as the cube deforms, the points change positions giving the deformed shape at any point in time. Then the spring forces act to restore the mass points back to the undeformed shape. Thus the cube could stretch, contract, oscillate, change velocity and bounce off the walls of the bounding box while still holding its shape.</p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+
+	<div class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://vathsal.github.io/myWebsite//works">Back to Works</a>
+	</div>
+
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="https://www.instagram.com/picasiovs/?hl=en"> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/vathsalvs/">LinkedIn</a></li>
+            <li><a href="https://drive.google.com/open?id=1UaXhnzB15ku-ncwR-NpUEfw1NkG6HwOQ" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+        <p>Copyright &copy Vathsal Veena Shashidhar. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
