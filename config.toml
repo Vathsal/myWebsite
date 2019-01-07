@@ -69,6 +69,7 @@ publishDir = "docs"
   [params.section4]
    enable = true
    title = "Here's my journey in stills"
+   caption = "Check out more of my work here"
 
 
 #ABOUT PAGE
