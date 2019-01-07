@@ -38,7 +38,7 @@ publishDir = "docs"
 # MAIN  PAGE
   [params.landing]
     enable = true
-    title1 = "Hey I'm,"
+    title1 = "Hey, I'm"
     title2 = "Vathsal"
     subtitle = "Immersive-Technology Enthusiast &nbsp;&bull;&nbsp; Conversationalist &nbsp;&bull;&nbsp; Design Thinker"
 
