@@ -24,6 +24,8 @@
 					    Skills Section (superpowers)
 ------------------------------------------------------*/
 #skills {
+  /*background: url("../img/misc/all-characters.jpg") no-repeat;*/
+  /*background-image:url("../img/misc/all-characters.jpg") no-repeat;*/
   background-color: #191919;
   text-align: center;
   padding: 40px 0;
@@ -61,7 +63,12 @@
   margin: 0;
   line-height: 1.8;
 }
+#skills .skills-img{
+  background-color: #070707;
+  width: 100%;
+  height: 30%;
 
+}
 
 /*-----------------------------------------------------
 					          Work Section
@@ -343,7 +350,7 @@ a:active {
   background: #000000;
   text-transform: none;
   border-radius: 28px;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 .center-text .btn-main a:hover{
   background: #000000;
@@ -487,7 +494,7 @@ a:active {
   background: #000000;
   padding: 10px 20px;
   border-radius: 28px;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 #intro .section-title a {
   color: #FFC408;
@@ -522,11 +529,11 @@ a:active {
   opacity: 0.8;
 }
 #call-to-action h2 {
-  color: #000000;
+  color: #ffd552;
   padding-bottom: 20px;
   line-height: 33px;
   margin: 0;
-  font-size: 30px;
+  font-size: 70px;
 }
 #call-to-action p {
   color: #000000;

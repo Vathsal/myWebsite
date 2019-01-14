@@ -38,22 +38,22 @@ publishDir = "docs"
 # MAIN  PAGE
   [params.landing]
     enable = true
-    title1 = "Hey, I'm"
-    title2 = "Vathsal"
-    subtitle = "Immersive-Technology Enthusiast &nbsp;&bull;&nbsp; Conversationalist &nbsp;&bull;&nbsp; Design Thinker"
+    title1 = ""
+    title2 = "Vathsal Veena Shashidhar"
+    subtitle = "Creative Coder &nbsp;&bull;&nbsp; Conversationalist &nbsp;&bull;&nbsp; Design Thinker"
 
   [params.wrapper]
     enable = true
-    title = "Well,"
-    paragraph1 = "I am developer by vocation, a designer by passion, and an aesthete by choice."
-    paragraph2 = "I am currently consulting as a Unity Developer for an Augmented Reality Project at Building 8, Facebook. Prior to this I was working as a VR software developer at Yerba Buena VR (A 360 video optimization VR Startup)."
-    paragraph3 = "I recently graduated from the University of Southern California with a masters in Computer Graphics. My coursework was primarily focused on applied signal processing, computer graphics, physics-based simulation and Virtual Reality."
+    title = "Hello,"
+    paragraph1 = ""
+    paragraph2 = ""
+    paragraph3 = ""
     caption = "View Works"
 
   [params.call]
     enable = true
-    title = "Technology • Design • Stratergy "
-    paragraph = "I am constantly striving to explore the nexus between art & technology"
+    title = "Design Technology Stratergy "
+    paragraph = ""
 
 
 
@@ -64,7 +64,7 @@ publishDir = "docs"
 
   [params.section3]
     enable = true
-    title = "Here's what I usually don't tell anyone"
+    title = "Here's are my obsessions"
 
   [params.section4]
    enable = true
