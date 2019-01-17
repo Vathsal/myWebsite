@@ -23,13 +23,21 @@
 		{{ partial "wrapper.html" . }}
 	{{ end }}
 
-	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+	<!--{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
 		{{ partial "call-to-action.html" . }}
-	{{ end }}
+	{{ end }}-->
+
+	{{ partial "section2.html" . }}
 
 	{{ if and .Site.Data.skills .Site.Data.skills.enable }}
 		{{ partial "skills.html" . }}
 	{{ end }}
+
+	{{ partial "section3.html" . }}
+
+	{{ partial "section4.html" . }}
+
+
 
 
 	{{ partial "footer.html" . }}

@@ -13,7 +13,7 @@
       <!-- image section -->
         <div class="col-md-5">
            <div class="c01">
-             <img src="../img/company-logos/fb.png" alt="Img">
+             <img src="img/company-logos/fb.png" alt="Img">
            </div>
         </div> <!-- .col-md-5 close -->
 
@@ -38,7 +38,7 @@
       <!-- image section -->
       <div class="col-md-5">
         <div class="c02">
-          <img src="../img/company-logos/ybvr.png" alt="Img">
+          <img src="img/company-logos/ybvr.png" alt="Img">
         </div>
       </div> <!-- .col-md-5 close -->
 
@@ -62,7 +62,7 @@
       <!-- image section -->
       <div class="col-md-5">
         <div class="c03">
-          <img src="../img/company-logos/dwa.png" alt="Img">
+          <img src="img/company-logos/dwa.png" alt="Img">
         </div>
       </div> <!-- .col-md-5 close -->
 
@@ -86,7 +86,7 @@
       <!-- image section -->
       <div class="col-md-5">
         <div class="c04">
-          <img src="../img/company-logos/usc.png" alt="Img">
+          <img src="img/company-logos/usc.png" alt="Img">
         </div>
       </div> <!-- .col-md-5 close -->
 
@@ -103,8 +103,11 @@
       </div><!-- .col-md-7 close -->
     </div>
 
-
-
+    {{ with .Site.Params.wrapper }}
+    <div class="center-text" style="padding-top: 10px;">
+      <a href="{{ $.Site.BaseURL }}{{ .url }}/works" class="btn btn-view-works ">{{ .caption }}</a>
+    </div>
+    {{ end }}
 
   </div>
 </section>

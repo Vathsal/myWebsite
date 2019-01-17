@@ -1,4 +1,4 @@
-title = "Vathsal"
+    title = "Vathsal"
 baseURL = "https://vathsal.github.io/myWebsite/"
 languageCode = "en-us"
 theme = "airspace"
@@ -10,10 +10,11 @@ publishDir = "docs"
     weight = 2
     name = "Works"
     url = "/works"
-  [[menu.header]]
-    weight = 3
-    name = "About"
-    url = "/about"
+
+#  [[menu.header]]
+#    weight = 3
+#    name = "About"
+#    url = "/about"
 
 #  [[menu.footer]]
 #    weight = 1
@@ -44,7 +45,7 @@ publishDir = "docs"
 
   [params.wrapper]
     enable = true
-    title = "Hello,"
+    title = "Here is where I studied,"
     paragraph1 = ""
     paragraph2 = ""
     paragraph3 = ""

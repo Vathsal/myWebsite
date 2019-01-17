@@ -407,10 +407,10 @@ a:active {
 -----------------------------------------------*/
 #landing {
   background-color: #070707;
-  /*background: url("../img/misc/landing-bg.gif") no-repeat;*/
+  background: url("../img/misc/cover.png") no-repeat;
   background-size: contain;
-  /*background-attachment: fixed;*/
-  /*padding: 0px 0px 310px 0px;*/
+  background-attachment: fixed;
+  padding: 0px 0px 510px 0px;
   position: relative;
 }
 #landing:before {
@@ -697,10 +697,11 @@ a:active {
 					       Section-2
 -----------------------------------------------*/
 #section-2 {
-    background: #191919;
+    background: #FFC408;
 }
 #section-2 .block h1{
-    color: #C7C5C5;
+    /*color: #C7C5C5;*/
+    color: #000000;
     font-size: 20px;
     font-weight: 500;
     margin-top: 20px;
@@ -708,29 +709,50 @@ a:active {
 }
 #section-2 .block h2{
     margin-bottom: -10px;
-    color: #FFC408;
+    /*color: #FFC408;*/
+    color: #000000;
     font-size: 14px;
     font-weight: 300;
 }
 #section-2 .block h3{
-    color: #C7C5C5;
+    /*color: #C7C5C5;*/
+    color: #000000;
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 20px;
 }
 #section-2 .block p{
-    color: #C7C5C5;
+    /*color: #C7C5C5;*/
+    color: #000000;
     font-size: 15px;
     font-weight:400;
     margin-top:-20px;
 }
 #section-2 .section-title h5{
-    color: #ffffff;
+    color: #000000;
     font-size: 32px;
     font-weight: 400;
     margin-top: 60px;
     margin-bottom: 0px;
 }
+#section-2 .btn-view-works {
+  background: #000000;
+  padding: 10px 20px;
+  border-radius: 28px;
+  /*border: 1px solid white;*/
+}
+#section-2 a{
+      color: #FFC408;
+}
+#section-2 a:hover{
+      color: #ffffff;
+}
+#section-2 .center-text {
+  background: #FFC408;
+}
+
+
+
 #section-2 .section-title .col-md-5 {
   width: 40%;
 }
